@@ -8,27 +8,20 @@ Simply runs a Node HTTP server, and prints a random message
 Just build it using the regular mvn command line:
 
 ```
-> git clone https://github.com/lgrignon/jsweet-node-example.git
-> cd jsweet-node-example
-> npm install
-> bower install
+> git clone https://github.com/lgrignon/jsweet-node-example-simple-http.git
+> cd jsweet-node-example-simple-http
 > mvn clean generate-sources
 ```
-
-`gulp buildClientAndServer` executes behind the scene `gulp buildServer` and `gulp buildClient`, which runs respectively `mvn generate-sources -P server` and `mvn generate-sources -P client`.
-`gulp static` launches static resources generation such as jade transpilation, resources copy, bower libs concat & minify.
-The output folder is `build`.
-
 ## Run it
 Once built: 
 ```
 > cd build
-> node server/module.js
+> node server/Main.js
 ```
 
-Then, one could browse the chat by accessing [http://localhost:1337/](http://localhost:1337/) in a browser.
+Then, open http://localhost:8000 in a browser.
 
 ## Prerequisites
 
-The `node` and `npm` executables must be in the path (https://nodejs.org). `bower` and `gulp` should be installed as well.
+The `node` and `npm` executables must be in the path (https://nodejs.org).
 Install Maven (https://maven.apache.org/install.html).

@@ -2,7 +2,7 @@ package server;
 
 import static def.dom.Globals.console;
 import static def.node.http.Globals.createServer;
-import static jsweet.util.Globals.$map;
+import static jsweet.util.Lang.$map;
 
 import java.util.ArrayList;
 import java.util.List;
